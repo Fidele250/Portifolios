@@ -8,7 +8,7 @@ The goal is to make the portfolio more dynamic by enabling interaction between t
 ##  Objectives
 
 - Build a **RESTful API** to handle data operations for the portfolio.
-- Enable real-time updates (e.g., adding new projects without editing HTML manually).
+- Enable real-time updates ( adding new projects without editing HTML manually).
 - Secure and document API endpoints for future scalability.
 - Connect the frontend with the backend using **HTTP requests (GET, POST, PUT, DELETE)**.
 
@@ -32,7 +32,7 @@ The goal is to make the portfolio more dynamic by enabling interaction between t
 
 | Layer | Tools |
 |-------|-------|
-| **Backend Framework** | Node.js + Express.js *(or Flask if using Python)* |
+| **Backend Framework** | Node.js + Express.js & Django |
 | **Database** | MongoDB / MySQL / SQLite |
 | **API Testing** | Postman / Thunder Client |
 | **Documentation** | Swagger UI / Markdown Docs |
@@ -54,7 +54,7 @@ The goal is to make the portfolio more dynamic by enabling interaction between t
 - Dynamic portfolio powered by backend data  
 - Easy API-based project management  
 - Enhanced understanding of REST principles  
-- Foundation for integrating external APIs (e.g., GitHub, LinkedIn, or Blog API)
+- Foundation for integrating external APIs ( GitHub, LinkedIn, or Blog API)
 
 ---
 
@@ -78,4 +78,4 @@ The goal is to make the portfolio more dynamic by enabling interaction between t
 
 ---
 
-> 🧩 **Goal:** Build a well-documented API to power my portfolio with dynamic, secure, and scalable backend features.
+>  **Goal:** Build a well-documented API to power my portfolio with dynamic, secure, and scalable backend features.

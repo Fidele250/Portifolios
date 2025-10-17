@@ -1,48 +1,55 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
-    <link rel="stylesheet" href="/Portifolio/App/static/style.css">
+    <title>Kamana Fabien | Portfolio</title>
 
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'landing.js' %}"></script>
 </head>
 <body>
-<!--- Navigations --->
 
-   <div class="nav">
-        <div class="nav-user-name">
-            <h3 id="nav-header">Kamana Fabien</h3>
+    <!-- 🌐 Navigation -->
+    <header class="nav">
+        <div class="nav-logo">
+            <h2 class="brand-name">Kamana Fabien</h2>
         </div>
-        <div class="nav-navigations">
+        <nav class="nav-links">
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href=""><li>About-Me</li></a>
-                <a href=""><li>Contact</li></a>
-                <a href=""><li>Project</li></a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-cv">Download CV</button>
         </div>
-        <div class="nav-cv-download">
-            <button><link rel="stylesheet" href="#">Download CV</button>
+    </header>
+
+    <!-- 🏠 Hero / Introduction Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="intro">Hello, I'm</p>
+            <h1 class="name">KAMANA FABIEN</h1>
+            <h3 class="title">Frontend Developer</h3>
+            <p class="bio">
+                I design and build beautiful, responsive web interfaces that make the internet a better place. 
+                Passionate about UI/UX, accessibility, and creating meaningful user experiences.
+            </p>
+            <button class="btn-contact">Get in Touch</button>
         </div>
-   </div>
 
-   <!--Descriptions-->
-
-   <div class="description">
-        <div class="word-description">
-            <p>Hello I'm</p>
-            <h1>KAMANA FABIEN</h1>
-            <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci possimus veniam, quod temporibus assumenda nemo voluptatum, distinctio amet autem sapiente facilis non ad numquam ducimus corrupti esse reiciendis. Itaque.</p>
+        <div class="hero-image">
+            <img src="{% static 'images/image.png' %}" alt="Kamana Fabien Photo">
         </div>
-        <div class="image-description">
-            <img src="" alt="Image Tobe Added">
-        </div>
-   </div>
+    </section>
 
+    <footer>
+        <p>© 2025 Kamana Fabien. All rights reserved.</p>
+    </footer>
 
-    <script src="/Portifolio/App/static/landing.js"></script>
 </body>
 </html>

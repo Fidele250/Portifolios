@@ -1,86 +1,155 @@
-:root{
-    --backgroung-color : #FDF5E6;
-    --color-header : #29290c;
-    --color-paragraph : #94a1b2;
-    --color-button : #7f5af0;
-    --button-text : #fffffe;
-    --button-hover: #2cb67d;
-    --font-family :'Alan Sans'
-    --font-size:1.5px;
-
-
-
-
+:root {
+    --background-color: #FDF5E6;
+    --text-color: #333;
+    --subtext-color: #555;
+    --accent-color: #7f5af0;
+    --accent-hover: #2cb67d;
+    --white: #ffffff;
+    --font-family: 'Poppins', sans-serif;
 }
 
-/* NAVIGATION STYLING */
-
-*{
-    background-color: var(--backgroung-color);
-    color: var(--color-paragraph);
-    font-family:var(--font-family);
-    margin-left:5px;
-    margin-right: 3px;
-    font-family:var(--font-family);
-
-    
-}
-h1,h2,h3,h4,h5{
-    color: var(--color-header);
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
-.nav{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    border-bottom: 0.6px solid var(--color-paragraph);
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-.nav-navigations ul{
+/* 🌐 Navigation Bar */
+.nav {
     display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content:center;
-    list-style: none;
-    
-}
-.nav-navigations ul a{
-    text-decoration: none;
-
-}
- a:hover{
-    border-bottom: 0.3px solid var(--color-button);
-}
-
-.nav-user-name #nav-header{
-    align-self: center;
-    
-
-}
-.nav-cv-download button{
-    padding: 1rem;
-    background-color: var(--color-button);
-    border-radius: 10px;
-    border: transparent;
-    color: var(--button-text);
-
-}
-.nav-cv-download button:hover{
-    background-color: var(--button-hover);
-    cursor: pointer;
-}
-.description{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size:larger;
+    padding: 1.2rem 5%;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
+.nav-logo .brand-name {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+}
 
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
 
+.nav-links a {
+    text-decoration: none;
+    color: var(--subtext-color);
+    font-weight: 500;
+}
 
+.nav-links a:hover {
+    color: var(--accent-color);
+}
 
+.nav-actions .btn-cv {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-actions .btn-cv:hover {
+    background-color: var(--accent-hover);
+}
+
+/* 🏠 Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 5%;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text .intro {
+    font-size: 1.2rem;
+    color: var(--subtext-color);
+}
+
+.hero-text .name {
+    font-size: 2.8rem;
+    color: var(--accent-color);
+    margin: 0.5rem 0;
+}
+
+.hero-text .title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.hero-text .bio {
+    font-size: 1rem;
+    color: var(--subtext-color);
+    margin-bottom: 1.5rem;
+}
+
+.btn-contact {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-hover);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: var(--accent-color);
+}
+
+/* 👤 Image */
+.hero-image img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
+}
+
+/* 🦶 Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white);
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .nav-links ul {
+        gap: 1rem;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero-text {
+        margin-bottom: 2rem;
+    }
+}

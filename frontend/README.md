@@ -128,5 +128,5 @@ To contribute to this project, please follow these steps:
 
 4. Deployment: Frontend on Vercel, Backend on Render / Heroku
 
-5. Implement unit and integration tests
+5. Implement unit and integration tests.
 

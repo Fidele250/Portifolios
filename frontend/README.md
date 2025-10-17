@@ -1,7 +1,9 @@
 #  Portfolio - Frontend
 
-This is the **frontend** of my personal portfolio website, built with **React** (or React + TypeScript).  
-It showcases my projects, skills, and contact information in a modern, responsive design.
+This is a modern **personal portfolio** showcasing profile, skills, and projects.  
+The project uses **Django** as the backend and **React (with optional TypeScript)** as the frontend.  
+The goal is to create a **clean, responsive, and interactive portfolio** for professional presentation.
+
 
 ---
 

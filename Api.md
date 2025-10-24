@@ -10,7 +10,7 @@ The goal is to make the portfolio more dynamic by enabling interaction between t
 - Build a **RESTful API** to handle data operations for the portfolio.
 - Enable real-time updates ( adding new projects without editing HTML manually).
 - Secure and document API endpoints for future scalability.
-- Connect the frontend with the backend using **HTTP requests (GET, POST, PUT, DELETE)**.
+- Connect the frontend with the backend using **HTTP requests (GET, POST, PUT, DELETE Methods)**.
 
 ---
 

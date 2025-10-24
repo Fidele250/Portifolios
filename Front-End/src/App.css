@@ -1,0 +1,61 @@
+* {
+  background-color: #030511;
+  color: #fffffe;
+  font-family: "Alan Sans", "Century Gothic";
+}
+
+.description {
+  display: flex; /* create horizontal layout */
+  align-items: center; /* vertically center items */
+  justify-content: space-between; /* space between text & image */
+  gap: 30px; /* space between columns */
+  padding: 40px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+/* Left text section */
+.paragraph {
+  flex: 1; /* take equal space */
+  font-size: 16px;
+  line-height: 1.6;
+}
+.paragraph h2 {
+  font-weight: 900;
+}
+
+/* Right image section */
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 80%; /* reduce image size */
+  max-width: 300px; /* limit large images */
+
+  object-fit: cover;
+}
+
+/* Button style fix (React uses className, not class) */
+button.btn {
+  margin-top: 15px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .description {
+    flex-direction: column; /* stack vertically */
+    text-align: center;
+  }
+
+  .image img {
+    width: 60%;
+    max-width: 250px;
+  }
+}
+.navbar-brand {
+  color: #fffffe;
+}

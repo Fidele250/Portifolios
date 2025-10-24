@@ -4,50 +4,25 @@ import images from "../assets/image.png";
 function Navigations() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5" href="#">
-            <h3>Kamana</h3>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse ms-5" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item ms-3 ">
-                <a class="nav-link " aria-current="page" href="#">
-                  <strong>Home</strong>
-                </a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#">
-                  <strong>Contant me</strong>
-                </a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#">
-                  <strong>About-us</strong>
-                </a>
-              </li>
-            </ul>
-            <a
-              href=""
-              download
-              className="btn btn-outline-secondary ms-5 bi bi-download "
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      </nav>
+   <nav className="navbar-custom d-flex align-items-center justify-content-between px-5 py-3">
+  <h2 className="logo">Kamana</h2>
+
+  <ul className="nav-links d-flex list-unstyled m-0">
+    <li><a href="#home" className="nav-link-custom">Home</a></li>
+    <li><a href="#contact" className="nav-link-custom">Contact me</a></li>
+    <li><a href="#about" className="nav-link-custom">About-us</a></li>
+  </ul>
+
+  <a
+    href=""
+    download
+    className="btn btn-outline-light btn-download"
+  >
+    Download CV
+  </a>
+</nav>
+
+
 
       <div className="description ms-3">
         <div className="paragraph">

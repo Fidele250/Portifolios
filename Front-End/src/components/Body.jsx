@@ -33,9 +33,8 @@ function Description() {
             and creating meaningful user experiences.
           </p>
           <button class="btn btn-outline-primary">Get Started</button>
-          <div className="socials">
-            <FontAwesomeIcon icon={faXTwitter}></FontAwesomeIcon>
-          </div>
+         
+         
         </div>
         {/* <div className="image ">
           <img src={images} alt="Image not imported" />

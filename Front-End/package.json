@@ -17,6 +17,7 @@
     "bootstrap": "5.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-scroll": "^1.9.3",
     "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {

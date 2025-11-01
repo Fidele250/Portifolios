@@ -1,0 +1,96 @@
+/* Matches your portfolio dark background */
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6rem 3rem 2rem; /* 🔹 increased top padding */
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+
+}
+
+
+/* Left paragraph text */
+.paragraph {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #00ffcc;
+}
+
+.name-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.description-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.get-started-btn {
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Image styling */
+.image-wrapper {
+  flex: 1 1 40%;
+  text-align: center;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.5);
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Floating animation for smooth movement */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Smooth fade-in effect when component loads */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .description-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    margin-bottom: 1.5rem;
+  }
+}

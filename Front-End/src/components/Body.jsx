@@ -1,23 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import images from "../assets/image.png";
+import images from "../assets/IFOTOoggg.jpg";
 import Typewriter from "typewriter-effect";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import "./Description.css"; // custom styles
 
 function Description() {
   return (
     <>
-      {" "}
-      <div className="description ms-3">
+      <div className="description-container">
+        {/* Text Section */}
         <div className="paragraph">
-          <p>
+          <p className="intro-text">
             I'm a{" "}
             <Typewriter
               options={{
-                strings: [
-                  "Web Developer ",
-                  "UI/UX Designer",
-                  "Django Engineer",
-                ],
+                strings: ["Web Developer", "UI/UX Designer","Content Creator"],
                 autoStart: true,
                 loop: true,
                 delay: 75,
@@ -25,22 +22,26 @@ function Description() {
             />
           </p>
 
-          <h3>KAMANA Fabien</h3>
+          <h3 className="name-text">Promis Leonce TWAYINGANYIKI</h3>
 
-          <p>
+          <p className="description-text">
             I design and build beautiful, responsive web interfaces that make
             the internet a better place. Passionate about UI/UX, accessibility,
             and creating meaningful user experiences.
           </p>
-          <button class="btn btn-outline-primary">Get Started</button>
-         
-         
+
+          <button className="btn btn-outline-primary get-started-btn">
+            Get Started
+          </button>
         </div>
-        {/* <div className="image ">
-          <img src={images} alt="Image not imported" />
-        </div> */}
+
+        {/* Animated Circular Image */}
+        <div className="image-wrapper">
+          <img src={images} alt="KAMANA Fabien" className="profile-image" />
+        </div>
       </div>
     </>
   );
 }
+
 export default Description;
